@@ -38,7 +38,7 @@ function App() {
 
       <Rating />
 
-      <div role="tablist" className="tabs tabs-lift justify-center gap-4">
+      <div role="tablist" className="tabs tabs-lift justify-center gap-4 mb-10">
         <a onClick={() => setActiveTab("Products")} role="tab" className={`tab w-40 font-bold rounded-full ${activeTab === "Products"
             ? "tab-active text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
             : ""
@@ -56,7 +56,7 @@ function App() {
       </Suspense>
 
 
-      {activeTab === "Cart" && <Cart carts={carts}/>}
+      {activeTab === "Cart" && <Cart carts={carts} setCarts={setCarts}/>}
 
       <Steps />
 
