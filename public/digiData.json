@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "name": "Grammarly Pro",
+    "description": "AI-powered writing assistant that helps you write mistake-free, clear, and engaging content across all platforms.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Advanced grammar & spell check",
+      "Plagiarism detector",
+      "Tone adjustment suggestions",
+      "Browser extension support",
+      "MS Word & Google Docs integration"
+    ],
+    "icon": "✍️"
+  },
+  {
+    "id": 2,
+    "name": "Canva Pro",
+    "description": "Professional design tool with thousands of templates for social media, presentations, posters, and more.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "100,000+ premium templates",
+      "Background remover tool",
+      "Brand kit & logo maker",
+      "Team collaboration support",
+      "Export to PDF, PNG, MP4"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "Notion AI",
+    "description": "All-in-one workspace for notes, tasks, databases, and project management powered by artificial intelligence.",
+    "price": 10,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "AI writing & summarization",
+      "Task & project management",
+      "Kanban & calendar views",
+      "Real-time team collaboration",
+      "Database & wiki builder"
+    ],
+    "icon": "📝"
+  },
+  {
+    "id": 4,
+    "name": "Adobe Express",
+    "description": "Create stunning graphics, web pages, and video stories in minutes with Adobe's easy-to-use design platform.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Professional photo editing",
+      "Animated social media posts",
+      "Adobe Stock image access",
+      "One-click resize for platforms",
+      "Cloud storage & sharing"
+    ],
+    "icon": "🖼️"
+  },
+  {
+    "id": 5,
+    "name": "Loom Business",
+    "description": "Record and share video messages instantly. Perfect for remote teams, tutorials, and async communication.",
+    "price": 8,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "HD screen & camera recording",
+      "Instant shareable video links",
+      "Viewer engagement analytics",
+      "Custom branding & thumbnails",
+      "Slack & Notion integration"
+    ],
+    "icon": "🎥"
+  },
+  {
+    "id": 6,
+    "name": "Figma Professional",
+    "description": "Collaborative UI/UX design tool used by top design teams worldwide to build beautiful digital products.",
+    "price": 45,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Real-time collaborative editing",
+      "Component & design system support",
+      "Prototyping & user flow creation",
+      "Dev mode for developers",
+      "Unlimited project storage"
+    ],
+    "icon": "🖌️"
+  },
+  {
+    "id": 7,
+    "name": "Trello Premium",
+    "description": "Visual project management tool that helps teams organize tasks using boards, lists, and cards effortlessly.",
+    "price": 5,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited boards & cards",
+      "Timeline & calendar view",
+      "Automation with Butler AI",
+      "Priority support access",
+      "Advanced checklist features"
+    ],
+    "icon": "📋"
+  },
+  {
+    "id": 8,
+    "name": "Zoom Pro",
+    "description": "Industry-leading video conferencing platform for meetings, webinars, and team collaboration from anywhere.",
+    "price": 149,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "300-participant meeting support",
+      "30-hour meeting duration",
+      "Cloud recording & transcripts",
+      "Breakout rooms & polls",
+      "Custom meeting backgrounds"
+    ],
+    "icon": "📹"
+  },
+  {
+    "id": 9,
+    "name": "Slack Pro",
+    "description": "Powerful team messaging platform that centralizes communication, file sharing, and app integrations in one place.",
+    "price": 7,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Unlimited message history",
+      "2,000+ app integrations",
+      "Group audio & video calls",
+      "Advanced workflow automation",
+      "Shared channels with partners"
+    ],
+    "icon": "💬"
+  },
+  {
+    "id": 10,
+    "name": "Jasper AI",
+    "description": "AI content writing tool that generates high-quality blog posts, ads, emails, and social media content in seconds.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "50+ content writing templates",
+      "SEO-optimized content generation",
+      "Multi-language support (30+)",
+      "Brand voice customization",
+      "Team collaboration workspace"
+    ],
+    "icon": "🤖"
+  }
+]
