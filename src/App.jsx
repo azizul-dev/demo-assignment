@@ -8,7 +8,9 @@ import Simple from './component/Simple/Simple'
 import Ready from './component/Ready/Ready'
 import Footer from './component/Footer/Footer'
 import PremiumToolsSection from './component/PremiumToolsSection/PremiumToolsSection'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
+import Cart from './component/Cart/Cart'
+import { BiCake } from 'react-icons/bi'
 
 
 const getPremiumToolsSection = async () => {
@@ -20,7 +22,13 @@ const getPremiumToolsSection = async () => {
 
 
 function App() {
-  const toolsPromise = getPremiumToolsSection()
+  const [toolsPromise] = useState(() => getPremiumToolsSection())
+
+  const [activeTab, setActiveTab] = useState("Products")
+
+  const [carts, setCarts] = useState([])
+
+  
 
   return (
     <>
@@ -30,11 +38,25 @@ function App() {
 
       <Rating />
 
+      <div role="tablist" className="tabs tabs-lift justify-center gap-4">
+        <a onClick={() => setActiveTab("Products")} role="tab" className={`tab w-40 font-bold rounded-full ${activeTab === "Products"
+            ? "tab-active text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
+            : ""
+          }`}>Products</a>
+        <a onClick={() => setActiveTab("Cart")} role="tab" className={`tab w-40 font-bold rounded-full ${activeTab === "Cart"
+            ? "tab-active text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
+            : ""
+          }`}>Cart (2)</a>
+      </div>
+
       <Suspense fallback={<div className="flex justify-center items-center min-h-[200px]">
         <span className="loading loading-ring loading-xl"></span>
       </div>}>
-        <PremiumToolsSection toolsPromise={toolsPromise} />
+        {activeTab === "Products" && <PremiumToolsSection toolsPromise={toolsPromise} carts={carts} setCarts={setCarts}/>}
       </Suspense>
+
+
+      {activeTab === "Cart" && <Cart carts={carts}/>}
 
       <Steps />
 

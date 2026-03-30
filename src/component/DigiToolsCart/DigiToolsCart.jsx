@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 
 
-const DigiToolsCart = ({ premiumTools }) => {
+const DigiToolsCart = ({ premiumTools, carts, setCarts }) => {
 
     const [isAddToCart, setIssAddToCart] = useState(false)
+
+    const handlePurchasing = () => {
+        setIssAddToCart(true)
+        setCarts([...carts,premiumTools])
+    }
+
 
     const tagColors = {
         "popular": "bg-blue-100 text-blue-600",
@@ -21,7 +27,7 @@ const DigiToolsCart = ({ premiumTools }) => {
             </div>
             <div className=' flex items-center'>
                 <h2 className=' font-bold text-2xl'>${premiumTools.price}</h2>
-                <p>{premiumTools.period}</p>
+                <p>/{premiumTools.period}</p>
             </div>
             <div>
                 <div>
@@ -33,7 +39,7 @@ const DigiToolsCart = ({ premiumTools }) => {
                     </ul>
                 </div>
             </div>
-            <button onClick={() => setIssAddToCart(true)} className={`btn w-full text-white rounded-full ${isAddToCart
+            <button onClick={handlePurchasing} className={`btn w-full text-white rounded-full ${isAddToCart
                     ? "bg-green-500"
                     : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
                 }`}>

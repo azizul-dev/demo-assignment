@@ -2,9 +2,9 @@
 import { use } from 'react';
 import DigiToolsCart from '../DigiToolsCart/DigiToolsCart';
 
-const PremiumToolsSection = ({ toolsPromise }) => {
+const PremiumToolsSection = ({ toolsPromise, carts, setCarts }) => {
     const premiumToolsSection = use(toolsPromise)
-    
+
     return (
         
         <div className=' py-20 container mx-auto'>
@@ -15,8 +15,8 @@ const PremiumToolsSection = ({ toolsPromise }) => {
             </div>
             <div className='grid grid-cols-1s md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-10'>
                 {
-                    premiumToolsSection.map((premiumTools) => 
-                    <DigiToolsCart premiumTools={premiumTools}/>
+                    premiumToolsSection.map((premiumTools, index) => 
+                    <DigiToolsCart key={index} premiumTools={premiumTools} carts={carts} setCarts={setCarts}/>
                     )
                 }
             </div>
