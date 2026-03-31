@@ -10,18 +10,18 @@ const NavBar = ({ carts, setActiveTab }) => {
     return (
         <div className="navbar bg-base-100 shadow-sm sticky top-0 z-50">
             <div className="navbar-start">
-                <span></span>
+
                 {open ? <IoIosCloseCircle className=' md:hidden mr-5' onClick={() => setOpen(!open)} />
                     : <TiThMenu className=' md:hidden mr-5' onClick={() => setOpen(!open)} />}
                 <div className="">
-                    <ul className={`md:hidden w-full bg-white shadow-md transition-all duration-500 cursor-pointer p-4 space-y-2 transform ${open ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"}`}>
+                    <ul className={`absolute top-full left-0 md:hidden bg-white shadow-md transition-all duration-500 cursor-pointer p-4 space-y-2 transform ${open ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"}`}>
                         <li><a>Products</a></li>
                         <li><a>Features</a></li>
                         <li><a>Pricing</a></li>
                         <li><a>Testimonials</a></li>
                         <li><a>FAQ</a></li>
                     </ul>
-                    <h2 className="hidden md:block font-bold text-4xl bg-linear-to-r from-[#2e13f6] to-[#8c03f5] bg-clip-text text-transparent py-4">DigiTools</h2>
+                    <h2 className="block font-bold text-2xl md:text-4xl bg-linear-to-r from-[#2e13f6] to-[#8c03f5] bg-clip-text text-transparent py-4">DigiTools</h2>
                 </div>
 
             </div>
@@ -43,7 +43,7 @@ const NavBar = ({ carts, setActiveTab }) => {
                     <FaShoppingCart className='text-xl cursor-pointer' />
 
                     {carts.length > 0 && (
-                        <span className="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full">
+                        <span className="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full animate-bounce">
                             {carts.length}
                         </span>
                     )}

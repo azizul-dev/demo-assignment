@@ -60,7 +60,7 @@ function App() {
 
       
 
-      {activeTab === "Cart" && <Cart carts={carts} setCarts={setCarts}/>}
+      {activeTab === "Cart" && <Cart carts={carts} setCarts={setCarts} setActiveTab={setActiveTab}/>}
 
       <Steps />
 

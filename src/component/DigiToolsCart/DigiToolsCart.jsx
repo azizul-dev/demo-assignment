@@ -27,7 +27,7 @@ const DigiToolsCart = ({ premiumTools, carts, setCarts }) => {
         "new": "bg-orange-100 text-orange-600"
     }
     return (
-        <div className=' p-4 space-y-7 relative shadow shadow-gray-600 rounded-md border-gray-500 overflow-hidden transition-transform duration-300 hover:scale-102'>
+        <div className=' p-4 space-y-7 relative shadow shadow-gray-600 rounded-md border-gray-500 overflow-hidden transition-all duration-300 hover:scale-102 hover:shadow-purple-300 hover:shadow-lg'>
             <div>
                 <span className="text-4xl">{premiumTools.icon}</span>
             </div>
@@ -41,7 +41,7 @@ const DigiToolsCart = ({ premiumTools, carts, setCarts }) => {
             </div>
             <div>
                 <div>
-                    <span className={`absolute top-3 right-3 px-3 py-1 rounded-full text-sm ${tagColors[premiumTools.tagType]}`}>{premiumTools.tag}</span>
+                    <span className={`absolute top-3 right-3 px-3 py-1 rounded-full text-sm animate-pulse ${tagColors[premiumTools.tagType]}`}>{premiumTools.tag}</span>
                     <ul>
                         {premiumTools.features.map((feature, index) => (
                             <li key={index}>✅ {feature}</li>

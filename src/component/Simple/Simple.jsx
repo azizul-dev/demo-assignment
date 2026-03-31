@@ -5,17 +5,17 @@ import { FaCheck } from 'react-icons/fa';
 const Simple = () => {
     return (
         <div>
-            <div className='py-20'>
+            <div className='py-20 px-4 md:px-0'>
                 <div className='flex flex-col justify-center items-center space-y-3 py-10'>
                     <h1 className='font-bold text-4xl'>Simple, Transparent Pricing</h1>
                     <p className='text-gray-500'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
                 </div>
 
                 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 container mx-auto items-stretch'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 container mx-auto items-stretch '>
 
                     
-                    <div className='border border-gray-200 rounded-2xl p-8 flex flex-col gap-4 shadow-sm'>
+                    <div className='border border-gray-200 rounded-2xl p-8 flex flex-col gap-4 shadow-sm transition-transform duration-300 hover:scale-105 hover:shadow-lg'>
                         <h2 className='font-bold text-2xl'>Starter</h2>
                         <p className='text-gray-500'>Perfect for getting started</p>
 
@@ -40,7 +40,7 @@ const Simple = () => {
                     </div>
 
                    
-                    <div className='relative bg-linear-to-b from-[#2e13f6] to-[#8c03f5] rounded-2xl p-8 flex flex-col gap-4 text-white shadow-xl'>
+                    <div className='relative bg-linear-to-b from-[#2e13f6] to-[#8c03f5] rounded-2xl p-8 flex flex-col gap-4 text-white shadow-xl transition-transform duration-300 hover:scale-105 hover:shadow-lg'>
 
                         
                         <span className='absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-200 text-yellow-800 text-sm font-semibold px-4 py-1 rounded-full'>
@@ -71,7 +71,7 @@ const Simple = () => {
                     </div>
 
                     
-                    <div className='border border-gray-200 rounded-2xl p-8 flex flex-col gap-4 shadow-sm'>
+                    <div className='border border-gray-200 rounded-2xl p-8 flex flex-col gap-4 shadow-sm transition-transform duration-300 hover:scale-105 hover:shadow-lg'>
                         <h2 className='font-bold text-2xl'>Enterprise</h2>
                         <p className='text-gray-500'>For teams and businesses</p>
 

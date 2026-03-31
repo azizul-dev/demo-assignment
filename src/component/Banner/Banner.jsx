@@ -6,12 +6,12 @@ import leftarrow from '../../assets/products/Play.png'
 
 const Banner = () => {
     return (
-        <div className=" min-h-162.5 flex items-center overflow-hidden">
-            <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center  z-10">
+        <div className=" min-h-162.5 flex items-center overflow-hidden pt-6 lg:pt-0">
+            <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 px-4 md:px-0 gap-10 items-center z-10">
                 {/* Left Content */}
                 <div className="space-y-4">
                     <div className="inline-flex items-center gap-2 bg-[#2e13f6]/10 border border-[#8c03f5]/30 text-[#4F39F6] text-sm font-medium px-5 py-2 rounded-full">
-                        <span><img src={circle} alt="" /></span> New: AI-Powered Tools Available
+                        <span><img className=' animate-pulse' src={circle} alt="" /></span> New: AI-Powered Tools Available
                     </div>
 
                     <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter text-[#2e13f6]">
@@ -22,7 +22,7 @@ const Banner = () => {
                         </span>
                     </h1>
 
-                    <p className="text-lg text-zinc-700 max-w-lg">
+                    <p className="text-lg text-zinc-500 max-w-lg">
                         Access premium AI tools, design assets, templates, and productivity
                         software—all in one place. Start creating faster today.
                         Explore Products

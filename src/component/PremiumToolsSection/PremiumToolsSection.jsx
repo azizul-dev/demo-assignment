@@ -13,7 +13,7 @@ const PremiumToolsSection = ({ toolsPromise, carts, setCarts }) => {
                 <h2 className=' font-bold text-4xl'>Premium Digital Tools</h2>
                 <p className=' text-[#627382]'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
             </div>
-            <div className='grid grid-cols-1s md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-10'>
                 {
                     premiumToolsSection.map((premiumTools, index) => 
                     <DigiToolsCart key={index} premiumTools={premiumTools} carts={carts} setCarts={setCarts}/>

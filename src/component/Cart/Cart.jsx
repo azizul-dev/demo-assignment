@@ -2,7 +2,7 @@ import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa'
 import { toast } from 'react-toastify';
 
-const Cart = ({ carts, setCarts }) => {
+const Cart = ({ carts, setCarts, setActiveTab }) => {
 
     const handlePayment = () => {
         setCarts([])
@@ -24,13 +24,20 @@ const Cart = ({ carts, setCarts }) => {
             {
                 carts.length === 0 ?
 
-                    <div className=' bg-[#ffffff] mt-10 mb-10 p-4 p-10'>
+                    <div className=' bg-[#ffffff] mt-10 mb-10 p-10'>
                         <div >
                             <h1 className=' text-2xl font-bold'>Your Carts</h1>
                         </div>
                         <div className=' flex justify-center items-center flex-col space-y-5 mb-10'>
                             <FaShoppingCart className='text-8xl text-gray-300 animate-pulse' />
-                            <p>Your Cart is empty</p>
+                            <p className='text-zinc-600 text-xl'>Your cart is empty!</p>
+                            <p className='text-zinc-400 text-sm'>Add some awesome tools to get started!</p>
+                            <button onClick={() => {
+                                setActiveTab("Products");
+                                window.scrollTo({ top: 1, behavior: "smooth" });
+                            }} className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white px-6'>
+                                Explore Products
+                            </button>
                         </div>
                     </div>
                     : <>
