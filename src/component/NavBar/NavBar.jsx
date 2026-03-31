@@ -8,7 +8,7 @@ import { IoIosCloseCircle } from "react-icons/io";
 const NavBar = ({ carts, setActiveTab }) => {
     const [open, setOpen] = useState(false);
     return (
-        <div className="navbar bg-base-100 shadow-sm container mx-auto">
+        <div className="navbar bg-base-100 shadow-sm container mx-auto sticky top-0 z-50">
             <div className="navbar-start">
                 <span></span>
                 {open ? <IoIosCloseCircle className=' md:hidden mr-5' onClick={() => setOpen(!open)} />
