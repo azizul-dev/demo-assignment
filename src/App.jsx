@@ -29,46 +29,39 @@ function App() {
 
   const [carts, setCarts] = useState([])
 
-  
+
 
   return (
     <>
       <NavBar carts={carts} setActiveTab={setActiveTab}/>
 
-      <Banner />
+      {activeTab === "Cart" ? (
 
-      <Rating />
+        <Cart carts={carts} setCarts={setCarts} setActiveTab={setActiveTab} />
 
-      <div role="tablist" className="tabs tabs-lift justify-center gap-4 mb-10 ">
-        <a onClick={() => setActiveTab("Products")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "Products"
-            ? "tab-active text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
-            : ""
-          }`}>Products</a>
-        <a onClick={() => setActiveTab("Cart")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "Cart"
-            ? "tab-active text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
-            : ""
-          }`}>{`Cart (${carts.length})`}</a>
-      </div>
+      ) : (
 
-      
+        <>
+          <Banner />
+          <Rating />
 
-      <Suspense fallback={<div className="flex justify-center items-center min-h-[200px]">
-        <span className="loading loading-ring loading-xl"></span>
-      </div>}>
-        {activeTab === "Products" && <PremiumToolsSection toolsPromise={toolsPromise} carts={carts} setCarts={setCarts}/>}
-      </Suspense>
+          <div role="tablist" className="tabs tabs-lift justify-center gap-4 mb-10">
+            <a onClick={() => setActiveTab("Products")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "Products" ? "tab-active text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : ""}`}>Products</a>
+            <a onClick={() => setActiveTab("Cart")} role="tab" className={`tab w-40 font-bold rounded-full transition-transform duration-300 hover:scale-105 ${activeTab === "Cart" ? "tab-active text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : ""}`}>{`Cart (${carts.length})`}</a>
+          </div>
 
-      
+          <Suspense fallback={<div className="flex justify-center items-center min-h-[200px]"><span className="loading loading-ring loading-xl"></span></div>}>
+            <PremiumToolsSection toolsPromise={toolsPromise} carts={carts} setCarts={setCarts} />
+          </Suspense>
 
-      {activeTab === "Cart" && <Cart carts={carts} setCarts={setCarts} setActiveTab={setActiveTab}/>}
+          <Steps />
+          <Simple />
+          <Ready />
+          
+        </>
 
-      <Steps />
-
-      <Simple />
-
-      <Ready />
+      )}
       <Footer />
-      
     </>
   )
 }
