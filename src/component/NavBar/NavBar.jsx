@@ -21,7 +21,7 @@ const NavBar = ({ carts, setActiveTab }) => {
                         <li><a>Testimonials</a></li>
                         <li><a>FAQ</a></li>
                     </ul>
-                    <h2 className="block font-bold text-2xl md:text-4xl bg-linear-to-r from-[#2e13f6] to-[#8c03f5] bg-clip-text text-transparent py-4">DigiTools</h2>
+                    <h2 className="block font-bold text-2xl md:text-4xl bg-linear-to-r from-[#2e13f6] to-[#8c03f5] bg-clip-text text-transparent mr-4 py-4">DigiTools</h2>
                 </div>
 
             </div>

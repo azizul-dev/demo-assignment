@@ -6,9 +6,9 @@ const Simple = () => {
     return (
         <div>
             <div className='py-20 px-4 md:px-0'>
-                <div className='flex flex-col justify-center items-center space-y-3 py-10'>
-                    <h1 className='font-bold text-4xl'>Simple, Transparent Pricing</h1>
-                    <p className='text-gray-500'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+                <div className='flex flex-col justify-center items-center space-y-3 py-10 '>
+                    <h1 className='font-bold text-2xl md:text-4xl text-center'>Simple, Transparent Pricing</h1>
+                    <p className='text-gray-500 text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
                 </div>
 
                 
@@ -21,7 +21,7 @@ const Simple = () => {
 
                         
                         <div className='flex items-end gap-1'>
-                            <h1 className='font-bold text-5xl'>$0</h1>
+                            <h1 className='font-bold text-3xl md:text-5xl'>$0</h1>
                             <span className='text-gray-500 mb-1'>/Month</span>
                         </div>
 
@@ -51,7 +51,7 @@ const Simple = () => {
                         <p className='text-purple-200'>Best for professionals</p>
 
                         <div className='flex items-end gap-1'>
-                            <h1 className='font-bold text-5xl'>$29</h1>
+                            <h1 className='font-bold text-3xl md:text-5xl'>$29</h1>
                             <span className='text-purple-200 mb-1'>/Month</span>
                         </div>
 
@@ -76,7 +76,7 @@ const Simple = () => {
                         <p className='text-gray-500'>For teams and businesses</p>
 
                         <div className='flex items-end gap-1'>
-                            <h1 className='font-bold text-5xl'>$99</h1>
+                            <h1 className='font-bold text-3xl md:text-5xl'>$99</h1>
                             <span className='text-gray-500 mb-1'>/Month</span>
                         </div>
 
