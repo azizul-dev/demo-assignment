@@ -7,7 +7,7 @@ import leftarrow from '../../assets/products/Play.png'
 const Banner = () => {
     return (
         <div className=" min-h-162.5 flex items-center overflow-hidden pt-6 lg:pt-0">
-            <div className=" mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 px-4 md:px-0 gap-10 items-center z-10">
+            <div className=" mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center z-10">
                 {/* Left Content */}
                 <div className=" space-y-4 text-center lg:text-left flex flex-col items-center lg:items-start">
                     <div className="inline-flex items-center gap-2 bg-[#2e13f6]/10 border border-[#8c03f5]/30 text-[#4F39F6] text-sm font-medium px-5 py-2 rounded-full">
