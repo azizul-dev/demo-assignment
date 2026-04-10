@@ -1,43 +1,74 @@
 # 🚀 DigiTools – Premium Digital Tools Marketplace
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge\&logo=react\&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-0F172A?style=for-the-badge\&logo=tailwind-css)
-![DaisyUI](https://img.shields.io/badge/DaisyUI-5A0EF8?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+<p align="center">
+  <img src="./public/images/hero.png" />
+</p>
 
-> A modern, responsive React application to explore and purchase premium digital tools with a smooth cart experience.
+<p align="center">
+  <b>Supercharge Your Digital Workflow 🚀</b><br/>
+  Access premium AI tools, templates, and productivity software — all in one place.
+</p>
 
 ---
 
 ## 🌐 Live Demo
 
-🔗 https://demo-assignment-gamma.vercel.app/
+🔗 https://your-live-link.vercel.app
 
 ---
 
-## 📸 Preview
+## 🎥 Live Demo (GIF)
 
-![App Preview](./public/images/preview.png)
-
----
-
-## 🎥 Demo (GIF)
-
-![Demo](./public/images/demo.gif)
+<p align="center">
+  <img src="./public/images/demo.gif" width="800"/>
+</p>
 
 ---
 
-## ✨ Features
+## 🖥️ Application Preview
 
-* 🛒 Add to Cart (No duplicate items)
-* ❌ Remove from Cart
-* 💰 Dynamic total price calculation
+### 🚀 Hero Section
+
+<p align="center">
+  <img src="./public/images/hero.png" width="800"/>
+</p>
+
+---
+
+### 🛍️ Premium Tools (Products)
+
+<p align="center">
+  <img src="./public/images/products.png" width="800"/>
+</p>
+
+---
+
+### 💰 Pricing Plans
+
+<p align="center">
+  <img src="./public/images/pricing.png" width="800"/>
+</p>
+
+---
+
+### 🛒 Cart Experience
+
+<p align="center">
+  <img src="./public/images/cart.png" width="800"/>
+</p>
+
+---
+
+## ✨ Key Features
+
+* 🛒 Add to Cart (duplicate prevention)
+* ❌ Remove items instantly
+* 💰 Real-time total price calculation
 * 🔄 Smooth tab switching (Products / Cart)
-* 🔔 Toast notifications
-* 📱 Fully responsive
-* ⚡ Fast loading (Suspense)
-* 🎨 Clean & modern UI
+* 🔔 Toast notifications (success & error)
+* ⚡ Fast loading with React Suspense
+* 📱 Fully responsive design
+* 🎨 Modern UI with Tailwind + DaisyUI
 
 ---
 
@@ -51,7 +82,7 @@
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
 ```bash
 src/
@@ -71,7 +102,7 @@ src/
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation & Setup
 
 ```bash
 git clone https://github.com/your-username/digitools.git
@@ -87,41 +118,33 @@ npm run dev
 ### 👉 Add to Cart
 
 * Prevent duplicate items
-* Show success toast
+* Show success notification
 
 ### 👉 Remove Item
 
-* Remove specific item
+* Remove selected item
 * Show error toast
 
 ### 👉 Checkout
 
-* Clear cart
-* Show success message
-
----
-
-## 🧩 State Management
-
-* useState → Cart handling
-* use() → Data fetching
-* Props drilling → Component communication
+* Clears cart
+* Displays success message
 
 ---
 
 ## 🌙 Future Improvements
 
 * 🔐 Authentication system
-* 💳 Payment integration
+* 💳 Payment gateway integration
 * 🌙 Dark mode
-* 🌐 Backend (API)
+* 🌐 Backend API
 
 ---
 
-## 🖼️ Images Source
+## 🖼️ Assets & Credits
 
-* Images from Freepik
-* Proper attribution applied
+* UI Design inspired by modern SaaS platforms
+* Images & mockups (optional): Freepik
 
 ---
 
@@ -138,89 +161,20 @@ If you like this project, give it a ⭐ on GitHub!
 
 ---
 
-# 📌 HOW TO ADD IMAGES (IMPORTANT)
+# 📌 IMPORTANT SETUP (DO THIS FIRST)
 
-## 1️⃣ Create Folder
+## 👉 Create this folder:
 
 ```bash
 public/images/
 ```
 
----
+## 👉 Add your screenshots:
 
-## 2️⃣ Add Images
-
-* preview.png → Screenshot
-* demo.gif → Screen record
-* banner.jpg → optional
-
----
-
-## 3️⃣ Use in README
-
-```md
-![Preview](./public/images/preview.png)
-```
+* hero.png
+* products.png
+* pricing.png
+* cart.png
+* demo.gif (optional but recommended)
 
 ---
-
-## 4️⃣ Freepik Attribution (REQUIRED)
-
-```md
-Images designed by Freepik
-```
-
----
-
-# 🎥 HOW TO CREATE GIF (VERY IMPORTANT 🔥)
-
-Use:
-
-* Screen Recorder (Mac: Cmd + Shift + 5)
-* Or tool like ScreenToGif
-
-Then:
-
-* Save as demo.gif
-* Put inside `/public/images/`
-
----
-
-# 🚀 PRO TIPS
-
-✅ Add live link
-✅ Add GIF (very important for recruiters)
-✅ Keep README clean
-✅ Use badges (already added 😎)
-
----
-
-# 🔥 BONUS (Optional)
-
-You can also add:
-
-## Dark Mode Preview
-
-```md
-![Dark Mode](./public/images/dark.png)
-```
-
----
-
-## 📊 GitHub Stats (Optional)
-
-```md
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true)
-```
-
----
-
-# 🎉 DONE!
-
-Now just:
-👉 Copy
-👉 Paste
-👉 Replace your links
-👉 Push to GitHub
-
-Your project will look 🔥 PROFESSIONAL
