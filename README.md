@@ -1,180 +1,85 @@
-# 🚀 DigiTools – Premium Digital Tools Marketplace
+# 🛒 DigiTools
 
-<p align="center">
-  <img src="./public/images/hero.png" />
-</p>
+A modern digital tools marketplace to explore, select, and purchase premium productivity and AI-powered tools — all in one place.
 
+---
+
+## 🌐 Live Site
+
+🔗 https://demo-assignment-gamma.vercel.app/
+
+---
+
+## 🖥️ Full Application Preview
 <p align="center">
-  <b>Supercharge Your Digital Workflow 🚀</b><br/>
-  Access premium AI tools, templates, and productivity software — all in one place.
+  <img src="./images/mockup.jpg" width="900"/>
 </p>
 
 ---
 
-## 🌐 Live Demo
+## 🛠️ Technologies Used
 
-🔗 https://your-live-link.vercel.app
-
----
-
-## 🎥 Live Demo (GIF)
-
-<p align="center">
-  <img src="./public/images/demo.gif" width="800"/>
-</p>
-
----
-
-## 🖥️ Application Preview
-
-### 🚀 Hero Section
-
-<p align="center">
-  <img src="./public/images/hero.png" width="800"/>
-</p>
-
----
-
-### 🛍️ Premium Tools (Products)
-
-<p align="center">
-  <img src="./public/images/products.png" width="800"/>
-</p>
-
----
-
-### 💰 Pricing Plans
-
-<p align="center">
-  <img src="./public/images/pricing.png" width="800"/>
-</p>
-
----
-
-### 🛒 Cart Experience
-
-<p align="center">
-  <img src="./public/images/cart.png" width="800"/>
-</p>
+* ⚛️ React.js
+* 🎨 Tailwind CSS & DaisyUI
+* 🔔 React-Toastify
+* 📦 JSON (Static Data)
 
 ---
 
 ## ✨ Key Features
 
-* 🛒 Add to Cart (duplicate prevention)
-* ❌ Remove items instantly
-* 💰 Real-time total price calculation
-* 🔄 Smooth tab switching (Products / Cart)
+* 🛍️ Add to cart with duplicate prevention
+* 🔄 Real-time cart update in navbar
+* ❌ Remove items from cart instantly
+* 💰 Dynamic total price calculation
 * 🔔 Toast notifications (success & error)
-* ⚡ Fast loading with React Suspense
 * 📱 Fully responsive design
-* 🎨 Modern UI with Tailwind + DaisyUI
+* ⚡ Smooth user experience
 
 ---
 
-## 🧠 Tech Stack
+## 🚀 Core Functionalities
 
-* ⚛️ React
-* ⚡ Vite
-* 🎨 Tailwind CSS
-* 🌼 DaisyUI
-* 🔔 React Toastify
+### 🛒 Cart System
+
+* Add items to cart
+* Prevent duplicate entries
+* Remove items easily
+
+### 💳 Checkout Process
+
+* Calculate total price dynamically
+* Clear cart after checkout
+* Show success notification
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Setup
 
 ```bash
-src/
-│
-├── component/
-│   ├── Banner/
-│   ├── Cart/
-│   ├── NavBar/
-│   ├── PremiumToolsSection/
-│   ├── DigiToolsCart/
-│   └── ...
-│
-├── App.jsx
-├── main.jsx
-└── digiData.json
-```
-
----
-
-## ⚙️ Installation & Setup
-
-```bash
-git clone https://github.com/your-username/digitools.git
-cd digitools
+git clone https://github.com/azizul-dev/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
 npm install
 npm run dev
 ```
 
 ---
 
-## 🛍️ Core Functionalities
+## 📌 Notes
 
-### 👉 Add to Cart
-
-* Prevent duplicate items
-* Show success notification
-
-### 👉 Remove Item
-
-* Remove selected item
-* Show error toast
-
-### 👉 Checkout
-
-* Clears cart
-* Displays success message
-
----
-
-## 🌙 Future Improvements
-
-* 🔐 Authentication system
-* 💳 Payment gateway integration
-* 🌙 Dark mode
-* 🌐 Backend API
-
----
-
-## 🖼️ Assets & Credits
-
-* UI Design inspired by modern SaaS platforms
-* Images & mockups (optional): Freepik
+* All product data is managed using local JSON
+* UI is designed with a clean and modern approach
+* Focused on usability and smooth UX
 
 ---
 
 ## 👨‍💻 Author
 
-**Abdul Aziz**
-Frontend Developer 💻
+**Azizul Islam**
+Frontend Developer 🚀
 
 ---
 
 ## ⭐ Support
 
 If you like this project, give it a ⭐ on GitHub!
-
----
-
-# 📌 IMPORTANT SETUP (DO THIS FIRST)
-
-## 👉 Create this folder:
-
-```bash
-public/images/
-```
-
-## 👉 Add your screenshots:
-
-* hero.png
-* products.png
-* pricing.png
-* cart.png
-* demo.gif (optional but recommended)
-
----
